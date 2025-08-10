@@ -1,0 +1,61 @@
+static class FastReader {
+        BufferedReader br;
+        StringTokenizer st;
+ 
+        public FastReader() {
+            br = new BufferedReader(new InputStreamReader(System.in));
+        }
+ 
+        String next() {
+            while (st == null || !st.hasMoreTokens()) {
+                try {
+                    st = new StringTokenizer(br.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return st.nextToken();
+        }
+ 
+        int nextInt() {
+            return Integer.parseInt(next());
+        }
+ 
+        long nextLong() {
+            return Long.parseLong(next());
+        }
+ 
+        double nextDouble() {
+            return Double.parseDouble(next());
+        }
+ 
+        String nextLine() {
+            String str = "";
+            try {
+                str = br.readLine().trim();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return str;
+        }
+    }
+ 
+    static FastReader vt = new FastReader();
+    static PrintWriter out = new PrintWriter(System.out);
+    public static void main(String[] args) {
+        try {
+            int testCases = vt.nextInt();
+            // int testCases = 1;
+            while (testCases-- > 0) {
+                // write code here
+                solve();
+            }
+            out.flush();
+        } catch (Exception e) {
+            return;
+        }
+    }
+ static void solve() {
+       
+    }
+}
